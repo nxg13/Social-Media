@@ -1,0 +1,1 @@
+document.getElementById("mainImage").src = "mainImage.png";
