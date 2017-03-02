@@ -8,6 +8,8 @@ body {
 
 #joinTitle {
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 #joinButton {
     text-align: center;
@@ -15,6 +17,8 @@ body {
 
 #createTitle {
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 /* Dropdown Button */
 .dropbtn {
