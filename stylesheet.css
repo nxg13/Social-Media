@@ -18,10 +18,12 @@ body {
 }
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    height: 20px;
+    width: 80px;
     border: none;
     cursor: pointer;
 }
@@ -56,6 +58,8 @@ body {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+
 #createButton {
     text-align: center;
 }
+
