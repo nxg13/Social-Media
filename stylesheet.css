@@ -22,8 +22,9 @@ body {
     color: white;
     padding-bottom: 16px;
     font-size: 12px;
-    height: 20px;
-    width: 80px;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
     border: none;
     cursor: pointer;
 }
