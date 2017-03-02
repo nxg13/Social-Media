@@ -1,6 +1,3 @@
-var mainImage = document.getElementById("mainImage")
-mainImage.appendChild("mainImage.png");
-
 
 /* DROP-DOWN MENU: When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
