@@ -1,9 +1,12 @@
-body {
-    background-color: #B0F3FF;
-}
 
 #title {
     text-align: center;
+    font-weight: bold;
+}
+
+#mainImage {
+    width: 50%;
+    margin-left: 25%;
 }
 
 #joinTitle {
