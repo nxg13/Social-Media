@@ -1,5 +1,5 @@
-document.getElementById("mainImage").src = "mainImage.png";
-document.body.appendChild("mainImage.png");
+var mainImage = document.getElementById("mainImage")
+mainImage.appendChild("mainImage.png");
 
 
 /* DROP-DOWN MENU: When the user clicks on the button, 
