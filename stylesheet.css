@@ -1,7 +1,14 @@
 
 #title {
     text-align: center;
-    font-weight: bold;
+}
+
+#mainTitle {
+        font-weight: bold;
+}
+
+#mainSubtitle {
+        font-weight: bold;
 }
 
 #mainImage {
