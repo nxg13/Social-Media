@@ -76,6 +76,9 @@
 #hour {
     width: 25px;
 }
+#timeColon{
+    font-weight: bold;
+}
 #minute {
     width: 25px;
 }
