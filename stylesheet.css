@@ -75,12 +75,15 @@
 
 #hour {
     width: 25px;
+    float: left;
 }
 #timeColon{
     font-weight: bold;
+    background-color: white;
 }
 #minute {
     width: 25px;
+    float: right;
 }
 
 #createButton {
