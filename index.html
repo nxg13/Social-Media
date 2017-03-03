@@ -31,7 +31,7 @@
     
     
 <body background="grass.jpg">
-    
+    <!-- navigation bar can be used to move between pages on the website-->
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -72,11 +72,17 @@
             <div class="col-md-6">
                 <!-- insert front page's image here-->
                 <img id="mainImage" src="mainImage.png">
+                <p id="followUs">Follow Us On:</p>
+                <div class="button" id="followButton">
+                    <label><img id="facebookLogo" src="facebook.png"><input type="button" id="facebook" value="Facebook"></label>
+                    <label><img id="twitterLogo" src="twitter.png"><input type="button" id="twitter" value="Twitter"></label>
+                    <label><img id="instagramLogo" src="instagram.png"><input type="button" id="instagram" value="Instagram"></label>
+                </div>
             </div>
             
             <div class="col-md-3">
                 <p id="createTitle">Game Creating</p>
-                <!--create button for user to click in order to create a game, will take user to new page with various information to fill out about their game-->
+                <!--various information that user will fill out regarding the game they wish to create-->
                 <center>
                 <div class="dropdown">
                     <select>
@@ -117,6 +123,7 @@
                         <option value="240">4 hr</option>
                     </select>
                     </div>
+                <!--once all information has been completed, this button will submit the requested game-->
                 <div class="button">
                       <label><input type="button" id="createButton" value="Create Game"></label>
                 </div>

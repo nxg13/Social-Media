@@ -80,10 +80,11 @@
 #timeColon{
     font-weight: bold;
     background-color: white;
+    width: 15px;
 }
 #minute {
     width: 25px;
-    float: right;
+    float: left;
 }
 
 #createButton {
