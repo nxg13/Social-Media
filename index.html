@@ -26,9 +26,9 @@
 </head>
     
     
-<body background="grass.jpg">
-    <!-- navigation bar can be used to move between pages on the website-->
-    <nav class="navbar navbar-inverse">
+<body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -37,99 +37,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">QuickPick</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     
-    <div class="container" id="title">
+    <div class="container">
+
       <div class="starter-template">
-        <h1 id="mainTitle">QuickPick</h1>
-        <p class="lead" id="mainSubtitle">Pick-up games just a click away!</p>
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
-    </div>
-    
-    <div class="container" id="mainPage">
-        <div class="row">
-            <div class="col-md-3">
-                <p id="joinTitle">Game Joining</p>
-                <!--create button for user to click in order to join a game, will take user to new page with list of upcoming games-->
-                <div class="button">
-                    <center><label><input type="button" id="joinButton" value="Join Game"></label></center>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <!-- insert front page's image here-->
-                <img id="mainImage" src="sports.png">
-                <!-- various popular social media networks which users could follow this website on, perhaps for updates-->
-                <p id="followUs">Follow Us On:</p>
-                <div class="button" id="followButton">
-                    <label id="facebook"><img id="facebookLogo" src="facebook.png"><input type="button" id="facebookButton" value="Facebook"></label>
-                    <label id="twitter"><img id="twitterLogo" src="twitter.png"><input type="button" id="twitterButton" value="Twitter"></label>
-                    <label id="instagram"><img id="instagramLogo" src="instagram.png"><input type="button" id="instagramButton" value="Instagram"></label>
-                </div>
-            </div>
-            
-            <div class="col-md-3">
-                <p id="createTitle">Game Creating</p>
-                <!--various information that user will fill out regarding the game they wish to create-->
-                <center>
-                <div class="dropdown">
-                    <select>
-                        <option value="select">Select Sport</option>
-                        <option value="soccer">Soccer</option>
-                        <option value="wiffleball">Wiffleball</option>
-                        <option value="basketball">Basketball</option>
-                        <option value="football">Football (touch)</option>
-                        <option value="frisbee">Ultimate Frisbee</option>
-                        <option value="hockey">Street Hockey</option>
-                    </select>
-                    </div>
-                    <form id="startTime">
-                        Start Time:<br>
-                        <input type="text" id="hour" name="hour"><p id="timeColon">:</p><input type="text" id="minute" name="minute">
-                    </form>
-                    <form id="AmPm">
-                        <input type="radio" name="timeOfDay" value="AM"> AM
-                        <input type="radio" name="timeOfDay" value="PM"> PM
-                    </form>
-                    <div class="dropdown">
-                    <select>
-                        <option value="select">Select Game Length</option>
-                        <option value="30">30 min</option>
-                        <option value="45">45 min</option>
-                        <option value="60">1 hr</option>
-                        <option value="75">75 min</option>
-                        <option value="90">90 min</option>
-                        <option value="105">105 min</option>
-                        <option value="120">2 hr</option>
-                        <option value="135">135 min</option>
-                        <option value="150">150 min</option>
-                        <option value="165">165 min</option>
-                        <option value="180">3 hr</option>
-                        <option value="195">195 min</option>
-                        <option value="210">210 min</option>
-                        <option value="225">225 min</option>
-                        <option value="240">4 hr</option>
-                    </select>
-                    </div>
-                <!--once all information has been completed, this button will submit the requested game-->
-                <div class="button">
-                      <label><input type="button" id="createButton" value="Create Game"></label>
-                </div>
-                </center>
-            </div>
-        </div>
-           
-            
-      </div> <!-- /.container -->
+
+    </div><!-- /.container -->
     
     
     <!-- Bootstrap core JavaScript
@@ -140,7 +67,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     
-    <script src="js/myjs.js"></script>
+   
     
    </body>
 </html>
+
+
