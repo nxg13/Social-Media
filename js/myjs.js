@@ -5,9 +5,6 @@ provider.setCustomParameters({
   'login_hint': 'user@example.com'
 });
 
-function dummy() {
-    console.log("hi");
-}
 
 function signIn() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
