@@ -5,6 +5,10 @@ provider.setCustomParameters({
   'login_hint': 'user@example.com'
 });
 
+function dummy() {
+    console.log("hi");
+}
+
 function signIn() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 	  // This gives you a Google Access Token. You can use it to access the Google API.
