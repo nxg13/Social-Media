@@ -1,25 +1,27 @@
 //FIREBASE
 var provider = new firebase.auth.GoogleAuthProvider();
-provider.addScope('https://www.googleapis.com/auth/plus.login');
-provider.setCustomParameters({
-  'login_hint': 'user@example.com'
-});
+    provider.addScope('https://www.googleapis.com/auth/plus.login');
+    provider.setCustomParameters({
+    'login_hint': 'user@example.com'
+    });
+var user;
 
-function dummy() {
-    console.log("hi");
-}
+$( document ).ready(function() {
+    $("#mainPage").hide();
+});
 
 function signIn() {
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 	  // This gives you a Google Access Token. You can use it to access the Google API.
 	  var token = result.credential.accessToken;
 	  // The signed-in user info.
-	  var user = result.user;
-        console.log(user.displayName);
+	  user = result.user;
+      showMainPageContainer();
+      
+      
 	  // ...
 	}).catch(function(error) {
 	  // Handle Errors here.
-	  console.log("not good?")
 	  var errorCode = error.code;
 	  var errorMessage = error.message;
 	  // The email of the user's account used.
@@ -29,6 +31,14 @@ function signIn() {
 	  // ...
 	});
 }
+
+function showMainPageContainer() {
+    $("#login").hide();
+    $("#mainPage").show();
+    $("#welcomeText").html("Hello, " + user.displayName);
+}
+
+
 
 // DROP-DOWN MENU: When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
