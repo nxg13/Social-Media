@@ -3,13 +3,18 @@
 }
 
 #mainTitle {
-    font-size: 36px;
+    font-size: 46px;
     font-weight: bold;
 }
 
 #mainSubtitle {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: bold;
+}
+
+#welcomeText {
+    text-align: center;
+    font-size: 26px;
 }
 
 #mainImage {
@@ -85,6 +90,9 @@
 #minute {
     width: 25px;
 }
+#AmPm {
+    font-weight: bold;
+}
 
 #createButton {
     margin-top: 30px;
@@ -121,6 +129,5 @@
     width: 10%;
     margin-left: 45%;
 }
-
 
 
