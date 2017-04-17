@@ -39,6 +39,13 @@ function showMainPageContainer() {
 }
 
 
+var createGame = document.getElementById("createGame");
+var createButton = document.getElementById("createButton");
+
+function submitClick() {
+    var firebaseRef = firebase.database().ref();
+    firebaseRef.child("Entry").set("Some Value");
+}
 
 // DROP-DOWN MENU: When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
