@@ -42,6 +42,12 @@ function showMainPageContainer() {
 var createGame = document.getElementById("createGame");
 var createButton = document.getElementById("createButton");
 
+createButton.addEventListener('click', e => {
+    var gameCreated = createGame.value;
+    var auth = firebase.auth();
+    
+});
+
 function submitClick() {
     var firebaseRef = firebase.database().ref();
     firebaseRef.child("Entry").set("Some Value");
