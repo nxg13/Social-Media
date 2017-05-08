@@ -38,6 +38,14 @@ function showMainPageContainer() {
     $("#welcomeText").html("Hello, " + user.displayName);
 }
 
+$(".dropdown").on("hide.bs.dropdown", function(event){
+    var text = $(event.relatedTarget).text();
+    firebase.database().ref('Users/' + user.uid).set({
+        name: user.displayName,
+        email: user.email
+    });
+    
+});
 
 var createGame = document.getElementById("createGame");
 var createButton = document.getElementById("createButton");
@@ -48,10 +56,7 @@ createButton.addEventListener('click', e => {
     
 });
 
-function submitClick() {
-    var firebaseRef = firebase.database().ref();
-    firebaseRef.child("Entry").set("Some Value");
-}
+
 
 // DROP-DOWN MENU: When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
