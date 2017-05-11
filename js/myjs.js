@@ -47,6 +47,7 @@ $(".dropdown").on("hide.bs.dropdown", function(event){
     
 });
 
+
 var createGame = document.getElementById("createGame");
 var createButton = document.getElementById("createButton");
 
@@ -56,7 +57,10 @@ createButton.addEventListener('click', e => {
     
 });
 
-
+var createGameRef = firebase.database().ref('posts/' + postId + '/createGame');
+createGameRef.on('value', function(snapshot) {
+  updateStarCount(postElement, snapshot.val());
+});
 
 // DROP-DOWN MENU: When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function myFunction() {
