@@ -8,6 +8,7 @@ var user;
 
 $( document ).ready(function() {
     $("#mainPage").hide();
+    $("#profile").hide();
 });
 
 function signIn() {
@@ -34,6 +35,7 @@ function showMainPageContainer() {
     $("#login").hide();
     $("#mainPage").show();
     $("#welcomeText").html("Hello, " + user.displayName);
+    $("#profile").hide();
 }
 
 function profile() {
