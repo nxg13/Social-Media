@@ -17,8 +17,6 @@ function signIn() {
 	  // The signed-in user info.
 	  user = result.user;
       showMainPageContainer();
-      
-      
 	  // ...
 	}).catch(function(error) {
 	  // Handle Errors here.
@@ -36,6 +34,16 @@ function showMainPageContainer() {
     $("#login").hide();
     $("#mainPage").show();
     $("#welcomeText").html("Hello, " + user.displayName);
+}
+
+function profile() {
+    showProfileContainer();
+}
+
+function showProfileContainer() {
+    $("#login").hide();
+    $("#mainPage").hide();
+    $("#profile").show();
 }
 
 $(".dropdown").on("hide.bs.dropdown", function(event){
